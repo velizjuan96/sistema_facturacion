@@ -3,15 +3,15 @@
 <div class="container-fluid">
 	<ol class="breadcrumb">
 		<li><a href="./">Inicio</a></li>
-		<li><a class="ajax-request" href="/inventario/producto/producto.php">Producto</a></li>
-    <li><a class="active" href="#">Producto Nuevo</a></li>
+		<li><a class="ajax-request" href="/inventario/compras/compra.php">Compras</a></li>
+    <li><a class="active" href="#">Compra Nuevo</a></li>
 	</ol>
 </div>
 <div class="container-fluid spark-screen">
   <div class="row">
     <div class="col-md-12">
       <div class="panel panel-default">
-        <div class="panel-heading">Producto Nuevo</div>
+        <div class="panel-heading">Compra Nuevo</div>
         <div class="panel-body">
           <div class="col-md-4">
           </div>
@@ -154,7 +154,7 @@
 
               <div class="col-sm-12">
                 <br>
-                <input type="submit" class="btn btn-primary" value="Crear" disabled />
+                <input type="submit" class="btn btn-primary" value="Enviar" disabled />
               </div>
             </form>
           </div>

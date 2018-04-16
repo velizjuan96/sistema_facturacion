@@ -6,7 +6,7 @@
         <img src="{{asset('/img/user2-160x160.jpg')}}" class="img-circle" alt="User Image" />
       </div>
       <div class="pull-left info">
-        <p>Pedro Picapiedra</p>
+        <p>Administrador</p>
 
       </div>
     </div>
