@@ -203,7 +203,7 @@ do{
               </div>
               <div class="col-sm-12">
                 <br>
-                <input type="submit" class="btn btn-primary" value="Enviar" disabled />
+                <input type="submit" class="btn btn-primary" value="Actualizar" disabled />
               </div>
             </form>
           </div>
