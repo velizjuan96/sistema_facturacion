@@ -23,6 +23,30 @@
 								<label class='control-sidebar-subheading' for="fecha">RTN</label>
 								<input type="text" name="rtn" id="rtn" required maxlength="255" class="form-control"/>
 							</div>
+							<div class="col-sm-6">
+								<label class='control-sidebar-subheading' for="fecha">Dias de Credito</label>
+								<input type="number" name="dias_credito" id="dias_credito" required maxlength="255" class="form-control"/>
+							</div>
+							<div class="col-sm-6">
+								<label class='control-sidebar-subheading' for="fecha">Limite de Credito</label>
+								<input type="number" name="limite_credito" id="limite_credito" required maxlength="255" class="form-control"/>
+							</div>
+							<div class="col-sm-12">
+								<label class='control-sidebar-subheading' for="fecha">Forma de pago</label>
+								<input type="text" name="forma_pago" id="forma_pago" required maxlength="255" class="form-control"/>
+							</div>
+							<div class="col-sm-12">
+								<label class='control-sidebar-subheading' for="fecha">Direccion</label>
+								<input type="text" name="direccion" id="direccion" required maxlength="255" class="form-control"/>
+							</div>
+							<div class="col-sm-12">
+								<label class='control-sidebar-subheading' for="fecha">Telefono</label>
+								<input type="text" name="telefono" id="telefono" required maxlength="255" class="form-control"/>
+							</div>
+							<div class="col-sm-12">
+								<label class='control-sidebar-subheading' for="fecha">Correo</label>
+								<input type="text" name="correo" id="correo" required maxlength="255" class="form-control"/>
+							</div>
 
 
               <div class="col-sm-12">

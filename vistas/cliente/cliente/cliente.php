@@ -28,7 +28,13 @@
                 <th>Id</th>
                 <th>Nombre</th>
                 <th>RTN</th>
+								<th>Dias de Credito</th>
+								<th>Limite de Credito</th>
+								<th>Forma de Pago</th>
 							  <th>estado</th>
+								<th>Direccion</th>
+								<th>Telefono</th>
+								<th>Correo</th>
                 <th>Opciones</th>
               </thead>
               <tbody>
@@ -44,7 +50,13 @@
                   echo "<td>".$fila[0]."</td>";
                   echo "<td>".$fila[1]."</td>";
 									echo "<td>".$fila[2]."</td>";
-                  echo "<td>".($fila[3]==0?'Deshabilitado':'Habilitado')."</td>";
+									echo "<td>".$fila[3]."</td>";
+									echo "<td>".$fila[4]."</td>";
+									echo "<td>".$fila[5]."</td>";
+                  echo "<td>".($fila[6]==0?'Deshabilitado':'Habilitado')."</td>";
+									echo "<td>".$fila[7]."</td>";
+									echo "<td>".$fila[8]."</td>";
+									echo "<td>".$fila[9]."</td>";
                   echo '<td>
                   <a class="btn btn-primary ajax-request" href="/cliente/cliente/clienteeditar.php?id='.$fila[0].'">
                   <i class="fa fa-pencil"></i>

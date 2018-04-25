@@ -12,7 +12,14 @@ $fila = $stmt->fetch(PDO::FETCH_NUM, PDO::FETCH_ORI_LAST);
 do{
   $nombre=$fila[1];
   $rtn=$fila[2];
-  $estado=$fila[3];
+  $diascredito=$fila[3];
+  $limitecredito=$fila[4];
+  $formapago=$fila[5];
+  $estado=$fila[6];
+  $direccion=$fila[7];
+  $telefono=$fila[8];
+  $correo=$fila[9];
+
 }while($fila =$stmt->fetch(PDO::FETCH_NUM, PDO::FETCH_ORI_PRIOR))
 ?>
 <div class="container-fluid">
@@ -45,12 +52,37 @@ do{
                 <input type="text" name="rtn" id="rtn" required maxlength="255" class="form-control"  value="<?php echo $rtn; ?>"/>
               </div>
               <div class="col-sm-12">
+                <label class='control-sidebar-subheading' for="fecha">Dias de credito</label>
+                <input type="number" name="dias_credito" id="dias_credito" required maxlength="255" class="form-control"  value="<?php echo $diascredito; ?>"/>
+              </div>
+              <div class="col-sm-12">
+                <label class='control-sidebar-subheading' for="fecha">Limite de credito</label>
+                <input type="number" name="limite_credito" id="limite_credito" required maxlength="255" class="form-control"  value="<?php echo $limitecredito; ?>"/>
+              </div>
+              <div class="col-sm-12">
+                <label class='control-sidebar-subheading' for="fecha">Forma de pago</label>
+                <input type="text" name="forma_pago" id="forma_pago" required maxlength="255" class="form-control"  value="<?php echo $formapago; ?>"/>
+              </div>
+              <div class="col-sm-12">
+                <label class='control-sidebar-subheading' for="fecha">Direccion</label>
+                <input type="text" name="direccion" id="direccion" required maxlength="255" class="form-control"  value="<?php echo $direccion; ?>"/>
+              </div>
+              <div class="col-sm-12">
+                <label class='control-sidebar-subheading' for="fecha">Telefono</label>
+                <input type="text" name="telefono" id="telefono" required maxlength="255" class="form-control"  value="<?php echo $telefono; ?>"/>
+              </div>
+              <div class="col-sm-12">
+                <label class='control-sidebar-subheading' for="fecha">correo</label>
+                <input type="text" name="correo" id="correo" required maxlength="255" class="form-control"  value="<?php echo $correo; ?>"/>
+              </div>
+              <div class="col-sm-12">
                 <label class='control-sidebar-subheading' for="fecha" >Estado</label>
                 <select name="estado" class="form-control">
                   <option value="1" <?php if($estado==1) echo "selected"; ?> >Habilitado</option>
                   <option value="0" <?php if($estado==0) echo "selected"; ?>>Deshabilitado</option>
                 </select>
               </div>
+
               <div class="col-sm-12">
                 <br>
                 <input type="submit" class="btn btn-primary" value="Enviar" disabled />

@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 15-04-2018 a las 20:17:52
+-- Tiempo de generación: 25-04-2018 a las 01:54:52
 -- Versión del servidor: 10.1.19-MariaDB
 -- Versión de PHP: 5.6.28
 
@@ -30,7 +30,13 @@ CREATE TABLE `cliente` (
   `id` int(11) NOT NULL,
   `nombre` varchar(60) NOT NULL,
   `rtn` varchar(14) NOT NULL,
+  `dias_credito` int(4) NOT NULL,
+  `limite_credito` int(10) NOT NULL,
+  `forma_pago` varchar(25) NOT NULL,
   `estado` tinyint(4) NOT NULL,
+  `direccion` varchar(50) NOT NULL,
+  `telefono` varchar(15) NOT NULL,
+  `correo` varchar(30) NOT NULL,
   `fecha_creacion` date NOT NULL,
   `fecha_modificacion` date NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
@@ -39,8 +45,9 @@ CREATE TABLE `cliente` (
 -- Volcado de datos para la tabla `cliente`
 --
 
-INSERT INTO `cliente` (`id`, `nombre`, `rtn`, `estado`, `fecha_creacion`, `fecha_modificacion`) VALUES
-(2, 'tulio', '747478948', 1, '2018-04-14', '2018-04-14');
+INSERT INTO `cliente` (`id`, `nombre`, `rtn`, `dias_credito`, `limite_credito`, `forma_pago`, `estado`, `direccion`, `telefono`, `correo`, `fecha_creacion`, `fecha_modificacion`) VALUES
+(2, 'tulio', '747478948', 0, 0, '', 1, '', '', '', '2018-04-14', '2018-04-14'),
+(3, 'kjsdbcl', '745834503495', 30, 30000, 'dkjsfis', 1, 'khjdsbfljskhdf', '8458973', 'mariadb@gmail.com', '2018-04-24', '2018-04-25');
 
 --
 -- Índices para tablas volcadas
@@ -60,7 +67,7 @@ ALTER TABLE `cliente`
 -- AUTO_INCREMENT de la tabla `cliente`
 --
 ALTER TABLE `cliente`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
