@@ -20,7 +20,7 @@
 
 							<div class="col-sm-12">
  							<label class='control-sidebar-subheading' for="fecha">Codigo</label>
- 					    <input type="text" name="codigo" id="codigo" required maxlength="255" class="form-control codigo" readonly="true" />
+ 					    <input type="text" name="codigo" id="codigo" required maxlength="255" class="form-control " readonly="true" />
             	</div>
               <div class="col-sm-12">
                 <label class='control-sidebar-subheading' for="fecha">Codigo_barra</label>
@@ -154,7 +154,7 @@
 
               <div class="col-sm-12">
                 <br>
-                <input type="submit" class="btn btn-primary" value="Crear" disabled />
+                <input type="submit" class="btn btn-primary" value="Enviar" disabled />
               </div>
             </form>
           </div>

@@ -3,7 +3,7 @@
   <section class="sidebar">
     <div class="user-panel">
       <div class="pull-left image">
-        <img src="{{asset('/img/user2-160x160.jpg')}}" class="img-circle" alt="User Image" />
+        <img src="./img/user2-160x160.jpg" class="img-circle" alt="User Image"/>
       </div>
       <div class="pull-left info">
         <p>Administrador</p>
@@ -12,7 +12,7 @@
     </div>
     <ul class="sidebar-menu">
       <li class="header">Menu Principal</li>
-      <li class="active"><a href="#"><i class='fa fa-home'></i> <span>Inicio</span></a></li>
+      <li class="active"><a href="index.php"><i class='fa fa-home'></i> <span>Inicio</span></a></li>
       <li class="treeview">
         <a href="#"><i class='fa fa-cog'></i> <span>Ajustes</span> <i class="fa fa-angle-left pull-right"></i></a>
         <ul class="treeview-menu">
@@ -23,7 +23,7 @@
       <li class="treeview">
           <a href="#"><i class='fa fa-group'></i> <span>Clientes</span> <i class="fa fa-angle-left pull-right"></i></a>
             <ul class="treeview-menu">
-                <li><a href="/cliente/cliente/cliente.php" class="ajax-request">Cliente</a></li>
+                <li><a href="/cliente/cliente/cliente.php" class="ajax-request">Clientes</a></li>
                 <li><a href="#">Recibos</a></li>
                 <li><a href="#">Reportes</a></li>
             </ul>
@@ -45,7 +45,7 @@
       <li class="treeview">
           <a href="#"><i class='fa fa-group'></i> <span>Proveedores</span> <i class="fa fa-angle-left pull-right"></i></a>
             <ul class="treeview-menu">
-                <li><a href="#">Proveedores</a></li>
+                <li><a href="/proveedores/proveedor/proveedor.php" class="ajax-request">Proveedores</a></li>
             </ul>
       </li>
       <li class="treeview">

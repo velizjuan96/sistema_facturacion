@@ -54,7 +54,7 @@ do{
               </div>
               <div class="col-sm-12">
                 <br>
-                <input type="submit" class="btn btn-danger" value="Eliminar" disabled />
+                <input type="submit" class="btn btn-danger" value="Enviar" disabled />
               </div>
             </form>
           </div>

@@ -26,8 +26,8 @@
             <table class="table table-striped table-condensed" id="datos">
               <thead>
                 <th>Id</th>
-								<th>Codigo</th>
-								<th>Codigo de Barra</th>
+								<th>codigo</th>
+								<th>codigo_barra</th>
 								<th>Descripcion</th>
                 <th>Marca</th>
 								<th>Estado</th>
@@ -50,6 +50,7 @@
 									echo "<td>".$fila[3]."</td>";
                   echo "<td>".$fila[6]."</td>";
 								  echo "<td>".($fila[15]==0?'Deshabilitado':'Habilitado')."</td>";
+
 
                   echo '<td>
                   <a class="btn btn-primary ajax-request" href="/inventario/producto/productoeditar.php?id='.$fila[0].'">

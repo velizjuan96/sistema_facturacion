@@ -2,9 +2,9 @@
     <!-- Logo -->
     <a href="#" class="logo">
         <!-- mini logo for sidebar mini 50x50 pixels -->
-        <span class="logo-mini"><b>S</b>FT</span>
+        <span class="logo-mini"><b>A</b>LT</span>
         <!-- logo for regular state and mobile devices -->
-        <span class="logo-lg"><b>System</b>Fact </span>
+        <span class="logo-lg"><b>Admin</b>LTE Laravel </span>
     </a>
     <!-- Header Navbar -->
     <nav class="navbar navbar-static-top" role="navigation">
@@ -23,14 +23,14 @@
                             <!-- The user image in the navbar-->
                             <img src="./img/user2-160x160.jpg" class="user-image" alt="User Image"/>
                             <!-- hidden-xs hides the username on small devices so only the image appears. -->
-                            <span class="hidden-xs">Administrador</span>
+                            <span class="hidden-xs">Pedro Picapiedra</span>
                         </a>
                         <ul class="dropdown-menu">
                             <!-- The user image in the menu -->
                             <li class="user-header">
                                 <img src="./img/user2-160x160.jpg" class="img-circle" alt="User Image" />
                                 <p>
-                                    Administrador
+                                    Pedro Picapiedra
                                     <small>Logueado desde Nov. 2017</small>
                                 </p>
                             </li>
