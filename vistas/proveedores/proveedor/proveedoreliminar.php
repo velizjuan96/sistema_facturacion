@@ -45,45 +45,39 @@ do{
           <div class="col-md-4">
             <form method="post" action="proveedoreliminar.php" id="formulario">
               <div class="col-sm-12">
-
+			  
 			  <label class='control-sidebar-subheading' for="fecha">RTN Proveedor</label>
-                <input type="text" name="rtn" id="rtn" required maxlength="255" class="form-control" readonly value="<?php echo $rtn; ?>"/>
-              </div>
-              <div class="col-sm-12">
-                <label class='control-sidebar-subheading' for="fecha">Nombre Proveedor<label>
-                <input type="text" name="nombre" id="nombre" required maxlength="255" class="form-control"  value="<?php echo $nombre; ?>"/>
-              </div>
+                <input type="text" name="rtn" id="rtn" required maxlength="255" class="form-control" value="<?php echo $rtn; ?>"/>
 			  
-			  <div class="col-sm-12">
-                <label class='control-sidebar-subheading' for="fecha">Telefono<label>
-                <input type="text" name="telefono" id="telefono" required maxlength="255" class="form-control"  value="<?php echo $telefono; ?>"/>
-              </div>
 			  
-			  <div class="col-sm-12">
-                <label class='control-sidebar-subheading' for="fecha">Correo<label>
-                <input type="text" name="correo" id="correo" required maxlength="255" class="form-control"  value="<?php echo $correo; ?>"/>
-              </div>
+                <label class='control-sidebar-subheading' for="fecha">Nombre Proveedor</label>
+                <input type="text" name="nombre" id="nombre" required maxlength="255" class="form-control" value="<?php echo $nombre; ?>"/>
+				
+				
+				<label class='control-sidebar-subheading' for="fecha">telefono</label>
+                <input type="text" name="telefono" id="telefono" required maxlength="255" class="form-control" value="<?php echo $telefono; ?>"/>
+				
+				<label class='control-sidebar-subheading' for="fecha">Correo</label>
+                <input type="text" name="correo" id="correo" required maxlength="255" class="form-control" value="<?php echo $correo; ?>"/>
+				
+				<label class='control-sidebar-subheading' for="fecha">fax</label>
+                <input type="text" name="fax" id="fax" required maxlength="255" class="form-control" value="<?php echo $fax; ?>"/>
+				
+				<label class='control-sidebar-subheading' for="fecha">Pagina Web</label>
+                <input type="text" name="paginaweb" id="paginaweb" required maxlength="255" class="form-control" value="<?php echo $paginaweb; ?>" />
+				
+				<label class='control-sidebar-subheading' for="fecha">Dias Credito</label>
+                <input type="text" name="diascredito" id="diascredito" required maxlength="255" class="form-control" value="<?php echo $diascredito; ?>"/>
+				
+				<label class='control-sidebar-subheading' for="fecha">Limite Credito</label>
+                <input type="text" name="limitecredito" id="limitecredito" required maxlength="255" class="form-control" value="<?php echo $limitecredito; ?>"/>
+				
+				<label class='control-sidebar-subheading' for="fecha">Direccion</label>
+                <input type="text" name="direccion" id="direccion" required maxlength="255" class="form-control" value="<?php echo $direccion; ?>"/>
+              
 			  
-			  <div class="col-sm-12">
-                <label class='control-sidebar-subheading' for="fecha">Fax<label>
-                <input type="text" name="fax" id="fax" required maxlength="255" class="form-control"  value="<?php echo $fax; ?>"/>
-              </div>
-			  <div class="col-sm-12">
-                <label class='control-sidebar-subheading' for="fecha">Pagina Web<label>
-                <input type="text" name="paginaweb" id="paginaweb" required maxlength="255" class="form-control"  value="<?php echo $paginaweb; ?>"/>
-              </div>
-			  <div class="col-sm-12">
-                <label class='control-sidebar-subheading' for="fecha">Dias Credito<label>
-                <input type="text" name="diascredito" id="diascredito" required maxlength="255" class="form-control"  value="<?php echo $diascredito; ?>"/>
-              </div>
-			  <div class="col-sm-12">
-                <label class='control-sidebar-subheading' for="fecha">Limite Credito<label>
-                <input type="text" name="limitecredito" id="limitecredito" required maxlength="255" class="form-control"  value="<?php echo $limitecredito; ?>"/>
-              </div>
-			  <div class="col-sm-12">
-                <label class='control-sidebar-subheading' for="fecha">Direccion<label>
-                <input type="text" name="direccion" id="direccion" required maxlength="255" class="form-control"  value="<?php echo $direccion; ?>"/>
-              </div>
+			  
+			  </div>
 			  
 
               <div class="col-sm-12">

@@ -9,15 +9,23 @@ $stmt = $db->prepare("SELECT * FROM ventas where cliente like '%".$cliente."%'")
 $stmt->execute();
 $fila = $stmt->fetch(PDO::FETCH_NUM, PDO::FETCH_ORI_LAST);
 do{
-  echo "<tr>";
-  echo "<td>".$fila[0]."</td>";
-  echo "<td>".$fila[1]."</td>";
-  echo '<td>
-  <a class="btn btn-primary ajax-request" href="/inventario/ventas/ventaseditar.php?id='.$fila[0].'">
-  <i class="fa fa-pencil"></i>
-  </a>
-  </td>';
-  echo "</tr>";
+
+  $arraycliente = array("$fila[0]" =>"$fila[1]",);
+
+  // echo "<tr>";
+  // echo "<td>".$fila[0]."</td>";
+  // echo "<td>".$fila[1]."</td>";
+  // echo '<td>
+  // <a class="btn btn-primary ajax-request" href="/inventario/ventas/ventasagregar.php?id='.$fila[0].'">
+  // <i class="fa fa-pencil"></i>
+  // </a>
+  // </td>';
+  // echo "</tr>";
 
 }while($fila =$stmt->fetch(PDO::FETCH_NUM, PDO::FETCH_ORI_PRIOR))
+
+  echo json_decode($arraycliente);
+
+
+
 ?>

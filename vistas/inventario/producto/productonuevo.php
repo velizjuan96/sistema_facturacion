@@ -206,6 +206,7 @@ $("#formulario").submit(function( event ) {
     }
   });
 });
+
 $(document).on('change','.codigo',function(){
 	 var categoria=$(this).val();
    var url=   './controlador/consecutivo.php?categoria='+categoria;

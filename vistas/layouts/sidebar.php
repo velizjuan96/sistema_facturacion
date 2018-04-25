@@ -20,6 +20,12 @@
           <li><a href="#">Sucursales</a></li>
         </ul>
       </li>
+        <li class="treeview">
+            <a href="#"><i class="fa fa-paw" aria-hidden="true"></i> <span>Vendedor</span> <i class="fa fa-angle-left pull-right"></i></a>
+            <ul class="treeview-menu">
+                <li><a href="/vendedor/vendedor.php" class="ajax-request">Vendedor</a></li>
+            </ul>
+        </li>
       <li class="treeview">
           <a href="#"><i class='fa fa-group'></i> <span>Clientes</span> <i class="fa fa-angle-left pull-right"></i></a>
             <ul class="treeview-menu">
@@ -45,7 +51,7 @@
       <li class="treeview">
           <a href="#"><i class='fa fa-group'></i> <span>Proveedores</span> <i class="fa fa-angle-left pull-right"></i></a>
             <ul class="treeview-menu">
-                <li><a href="/proveedores/proveedor/proveedor.php" class="ajax-request">Proveedores</a></li>
+                <li><a href="#">Proveedores</a></li>
             </ul>
       </li>
       <li class="treeview">

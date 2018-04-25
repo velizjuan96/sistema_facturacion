@@ -513,9 +513,28 @@ $(document).on('keypress','.cliente',function( event ) {
         $("#clientesventas").html(data);
   });
 
-
-		//hasta aqui
-
 	}
 });
+
+
+
+$(document).on('change','.cliente','.telefono','rtn',function(){
+	 var cliente=$(this).val();
+   var telefono=$(this).val();
+   var rtn=$(this).val();
+   var url=   './controlador/operacion.php='+cliente+telefono+rtn;
+   $.get(url,function(data){
+		 $('#cliente').val(data);
+     $('#telefono').val(data);
+      $('#rtn').val(data);
+	 });
+});
+
+
+
+
+
+
+
+
 </script>
